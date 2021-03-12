@@ -2,7 +2,6 @@
 
 * {
 	box-sizing: border-box;
-	border: 1px solid red;
 }
 
 :root {
@@ -68,17 +67,21 @@ body {
 	position: relative;
 	width: 200px;
 	height: 200px;
-	background-color: #f0f0f0;
 }
 
 .needle {
-	background-color: var(--primary-color);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	height: 65px;
-	width: 3px;
-	transform-origin: bottom center;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65px;
+    width: 3px;
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
 }
 
 .needle.hour {
